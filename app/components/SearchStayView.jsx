@@ -23,7 +23,7 @@ const SearchStayView = () => {
         setLoading(true);
         console.log(storeOptions.adult + storeOptions.children);
         const response = await fetch(
-          `http://localhost:5000/api/hotels/search?type=${storeDestination}&guests=${
+          `https://misty-plum-hare.cyclic.app/api/hotels/search?type=${storeDestination}&guests=${
             storeOptions.adult + storeOptions.children
           }`
         );

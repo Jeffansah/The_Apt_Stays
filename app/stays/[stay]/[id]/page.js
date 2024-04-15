@@ -9,7 +9,7 @@ const page = async ({ params }) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/hotels/search/${params.id}`
+      `https://misty-plum-hare.cyclic.app/api/hotels/search/${params.id}`
     );
     data = await response.json();
   } catch (error) {

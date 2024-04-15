@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const page = async () => {
   let data = null;
   try {
-    const res = await fetch("http://localhost:5000/api/cart", {
+    const res = await fetch("https://misty-plum-hare.cyclic.app/api/cart", {
       cache: "no-store",
     });
     data = await res.json();

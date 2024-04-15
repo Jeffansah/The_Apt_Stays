@@ -48,7 +48,7 @@ const Subscribe = () => {
 
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/api/subscribe", {
+      const res = await fetch("https://misty-plum-hare.cyclic.app/api/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

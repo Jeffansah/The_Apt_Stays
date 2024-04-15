@@ -119,11 +119,6 @@ const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
           ))}
-          {user !== null && user.isAdmin && (
-            <Link href={"/admin/dashboard"}>
-              <p className="text-white ml-3">GO TO DASHBOARD</p>
-            </Link>
-          )}
         </div>
         <div className="flex justify-center">
           <Logo />
