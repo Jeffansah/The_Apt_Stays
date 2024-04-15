@@ -52,5 +52,5 @@ export async function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/admin/dashboard", "/auth"],
+  matcher: ["/admin/dashboard", "/auth", "/confirm-booking"],
 };

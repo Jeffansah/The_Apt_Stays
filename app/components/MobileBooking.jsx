@@ -30,6 +30,7 @@ import DestinationCard from "./DestinationCard";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import { CircularProgress } from "@mui/joy";
+import { getCookie } from "cookies-next";
 
 const MobileBooking = ({
   isSearchPage = false,
@@ -39,6 +40,8 @@ const MobileBooking = ({
   guestLimit,
   name,
 }) => {
+  const token = getCookie("access_token");
+
   const storeDestination = useBookingStore(
     (state) => state.booking.destination
   );
@@ -121,6 +124,10 @@ const MobileBooking = ({
 
   //Continue to Cart
   const bookNow = () => {
+    if(!token) {
+      router.push("/auth?s=login");
+      return;
+    }
     if (adultOption + childrenOption > guestLimit) {
       toast({
         title: "Uh oh!",
