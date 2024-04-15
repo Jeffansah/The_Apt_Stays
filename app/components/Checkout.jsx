@@ -14,7 +14,7 @@ const Checkout = ({}) => {
 
   const handleCheckout = async () => {
     try {
-      const response = await fetch("https://misty-plum-hare.cyclic.app/stripe/payment", {
+      const response = await fetch("https://misty-plum-hare.cyclic.app/api/stripe/payment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
