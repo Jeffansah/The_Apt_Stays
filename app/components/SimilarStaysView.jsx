@@ -4,7 +4,7 @@ const SimilarStaysView = async ({ guestLimit, id }) => {
   let data = null;
   try {
     const response = await fetch(
-      `https://misty-plum-hare.cyclic.app/api/hotels/similar?guests=${guestLimit}&id=${id}`
+      `https://aptapihosted.onrender.com/api/hotels/similar?guests=${guestLimit}&id=${id}`
     );
     const responseData = await response.json();
     data = responseData;

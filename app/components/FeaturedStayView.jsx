@@ -2,7 +2,7 @@ import FeaturedStayCard from "./FeaturedStayCard";
 import _ from "lodash";
 
 const FeaturedStayView = async () => {
-  const response = await fetch("https://misty-plum-hare.cyclic.app/api/hotels/featured");
+  const response = await fetch("https://aptapihosted.onrender.com/api/hotels/featured");
   const data = await response.json();
 
   return (

@@ -23,7 +23,7 @@ const SearchStayView = () => {
         setLoading(true);
         console.log(storeOptions.adult + storeOptions.children);
         const response = await fetch(
-          `https://misty-plum-hare.cyclic.app/api/hotels/search?type=${storeDestination}&guests=${
+          `https://aptapihosted.onrender.com/api/hotels/search?type=${storeDestination}&guests=${
             storeOptions.adult + storeOptions.children
           }`
         );

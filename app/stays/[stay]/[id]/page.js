@@ -9,7 +9,7 @@ const page = async ({ params }) => {
 
   try {
     const response = await fetch(
-      `https://misty-plum-hare.cyclic.app/api/hotels/search/${params.id}`
+      `https://aptapihosted.onrender.com/api/hotels/search/${params.id}`
     );
     data = await response.json();
   } catch (error) {

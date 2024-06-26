@@ -94,7 +94,7 @@ const MobileBooking = ({
   const addToCart = async (stayId, dates, rooms) => {
     try {
       setBookNowLoading(true);
-      const response = await fetch("https://misty-plum-hare.cyclic.app/api/cart", {
+      const response = await fetch("https://aptapihosted.onrender.com/api/cart", {
         cache: "no-store",
         method: "POST",
         headers: {

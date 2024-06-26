@@ -67,7 +67,7 @@ export function Register() {
         return;
       }
 
-      const response = await fetch("https://misty-plum-hare.cyclic.app/api/auth/register", {
+      const response = await fetch("https://aptapihosted.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

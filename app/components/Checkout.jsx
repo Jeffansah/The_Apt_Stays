@@ -14,7 +14,7 @@ const Checkout = ({}) => {
 
   const handleCheckout = async () => {
     try {
-      const response = await fetch("https://misty-plum-hare.cyclic.app/api/stripe/payment", {
+      const response = await fetch("https://aptapihosted.onrender.com/api/stripe/payment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const Checkout = ({}) => {
   useEffect(() => {
     const getCart = async () => {
       try {
-        const res = await fetch("https://misty-plum-hare.cyclic.app/api/cart", {
+        const res = await fetch("https://aptapihosted.onrender.com/api/cart", {
           cache: "no-store",
         });
         const data = await res.json();

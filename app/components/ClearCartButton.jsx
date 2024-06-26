@@ -14,7 +14,7 @@ const ClearCartButton = ({ id }) => {
   const handleClick = async () => {
     try {
       setLoading(true);
-      const res = await fetch(`https://misty-plum-hare.cyclic.app/api/cart/${id}`, {
+      const res = await fetch(`https://aptapihosted.onrender.com/api/cart/${id}`, {
         method: "DELETE",
         cache: "no-store",
       });
